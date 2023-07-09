@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/tahminedittext"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Tahminizi girin"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/tahminbutton"
+        android:layout_width="143dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:text="Tahmin et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girilentahminsayisitext" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="379dp"
+        android:layout_height="49dp"
+        android:text="1 - 100 arasında sayı tahmin edin"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sontahmintext"
+        android:layout_width="379dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:text="Son tahmininiz"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tahminedittext" />
+
+    <TextView
+        android:id="@+id/yapilantahmintext"
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:text="Bir sayı giriniz"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sontahmintext" />
+
+    <Button
+        android:id="@+id/tekrarbutton"
+        android:layout_width="143dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:text="Tekrar dene"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tahminbutton"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/girilentahminsayisitext"
+        android:layout_width="381dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:scrollbarSize="10dp"
+        android:text="Tahmin sayısı"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yapilantahmintext" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
